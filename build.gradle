@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'war'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.1'
+    compile 'org.slf4j:slf4j-log4j12:1.7.12'
+    compile 'javax.ws.rs:jsr311-api:1.1.1'
+    compile 'com.sun.jersey:jersey-server:1.18.1'
+    compile 'com.sun.jersey:jersey-servlet:1.18.1'
+    compile 'com.sun.jersey:jersey-bundle:1.18.1'
+    compile 'com.wordnik:swagger-jersey-jaxrs:1.5.1-M2'
+}
